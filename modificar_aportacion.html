@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script src="js/payment.js"></script>
+    <script src="js/jquery2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  </head>
+  <body>
+  
+
+
+
+<!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+<!--MIGAS-->
+<div class="container-fluid hidden-xs">
+    <div class="row contenedor_migas">
+      <a href="index.html"  class="migas">Inicio</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Afore</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas active">Mis aportaciones</a>
+    </div>
+</div>
+<!--FIN MIGAS-->
+
+
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont margen_migas">
+  <div  class="mas_info_subcont">
+        <div class="row row_sin icon_help_contenedor">
+         <h4 class="subtitulo_secciones">Mis aportaciones</h4>
+        </div>
+
+        <hr>
+        <div class="row row_sin">
+
+                        <!--APORTACION 1-->
+                        <div class=" col-sm-6 sin-p">
+                          <div class=" tab_content2  ">
+                               <div class="row">
+                                <div class="col-xs-12 text-center ">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 1</strong></h5>
+                                </div>
+                               </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación única</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Fecha de cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">01/09/20</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row content_btn">
+                                <div class="col-xs-12 text-right">
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#modal-eliminar-unica" ><span class="eliminar "></span></button>
+                                  <button type="button" class="btn btn-afore next-step  editar" onclick="window.location='modificar_aportacion-unica.html'" ><span class="editar2 "></span></button>
+                                </div>
+                               </div>
+                             </div>
+                        </div>
+                          <!--FIN APORTACION 1-->
+
+                          <!--APORTACION 2-->
+                        <div class=" col-sm-6 sin-p">
+                          <div class=" tab_content2 ">
+                               <div class="row " >
+                                <div class="col-xs-12 text-center">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 2</strong></h5>
+                                </div>
+                              </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación domiciliada</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row content_btn">
+                                <div class="col-xs-12 text-right">
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#modal-eliminar-domiciliada" ><span class="eliminar "></span></button>
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#modal-pausar-domiciliada" ><span class="pausar "></span></button>
+                                  <button type="button" class="btn btn-afore next-step  editar " onclick="window.location='modificar_aportacion-domiciliada.html'"   ><span class="editar2"></span></button>
+                                </div>
+                               </div>
+                             </div>
+                           </div>
+                          <!--FIN APORTACION 2-->
+
+
+                            <!--APORTACION 3-->
+                        <div class=" col-sm-6 sin-p">
+                          <div class=" tab_content2 ">
+                               <div class="row " >
+                                <div class="col-xs-12 text-center">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO APP</strong></h5>
+                                </div>
+                              </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación domiciliada</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row content_btn">
+                                <div class="col-xs-12 text-right">
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#" disabled="true"><span class="eliminar "></span></button>
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#" disabled="true"><span class="pausar "></span></button>
+                                  <button type="button" class="btn btn-afore next-step  editar" onclick="window.location='modificar_aportacion-domiciliada.html'"  disabled="true" ><span class="editar2 "></span></button>
+                                </div>
+                               </div>
+                             </div>
+                           </div>
+                          <!--FIN APORTACION 3-->
+
+
+                          <!--APORTACION 4-->
+                        <div class=" col-sm-6 sin-p">
+                          <div class=" tab_content2 ">
+                               <div class="row " >
+                                <div class="col-xs-12 text-center">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 4</strong></h5>
+                                </div>
+                              </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación domiciliada</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row content_btn">
+                                <div class="col-xs-12 text-right">
+                                  <button type="button" class="btn btn-default editar"  data-toggle="modal" data-target="#modal-eliminar-domiciliada2" ><span class="eliminar "></span></button>
+                                  <button type="button" class="btn btn-afore editar"  data-toggle="modal" data-target="#modal-pausar-domiciliada2" ><span class="pausar active"></span></button>
+                                  <button type="button" class="btn btn-afore next-step  editar " onclick="window.location='modificar_aportacion-domiciliada.html'"   ><span class="editar2 "></span></button>
+                                </div>
+                               </div>
+                             </div>
+                           </div>
+                          <!--FIN APORTACION 4-->
+
+
+
+        </div>
+
+
+        <div class="row row_sin">
+          <div class="col-lg-12 text-right">
+            <button type="button" class="btn btn-acciones-afore   "  onclick="window.location='crear_aportacion.html'">CREAR APORTACIÓN</button>
+          </div>
+        </div>
+
+        <div class="row row_sin">
+          <div class="col-lg-12 ">
+            <div class="subtitulo_bloque_aportacion text_justify">
+                        *Te informamos que cualquier modificación solo sera aplicada si se realíza dos dias hábiles antes de la fecha de cargo, de lo contrario se hara conforme a lo programado.
+                        </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--POPUP ELIMINA UNICA-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-eliminar-unica"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Resumen de Aportación</h3>
+       </div>
+       <div class="modal-body text-center"> 
+
+        <!-- CUERPO DEL MENSAJE -->
+                              <div class="row">
+                                <div class="col-xs-12 text-center ">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 1</strong></h5>
+                                </div>
+                               </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación única</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de inversión</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">SIEFORE Adicional AV2 (2 años)</h5></div>
+                               </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Fecha de cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">01/09/20</h5></div>
+                               </div>
+                               <br>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de cuenta</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">CLABE</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Clabe Interbancaria</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">************1234</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Beneficio fiscal</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">No</h5></div>
+                               </div>
+                               
+       </div>
+       <div class="modal-footer">
+        <div class="row row_sin text-left" >
+            ¿Porqué deseas cancelar tu aportación?
+            <select name="combo" class="campo_select form-control"  onchange="javascript:sp1(), OtrosOnChange(this)"   >
+             <option  selected >Selecciona un motivo</option>
+             <option value="No requiero mas domiciliaciones">No requiero mas domiciliaciones</option> 
+             <option value="Por problemas econónmicos">Por problemas econónmicos</option>
+             <option value="Me surgío un imprevisto">Me surgío un imprevisto</option>
+             <option value="Cambiare de banco para domiciliar">Cambiare de banco para domiciliar</option>
+             <option value="Invertiré en otro tipo de aportación">Invertiré en otro tipo de aportación</option>
+             <option value="Otros">Otros</option>
+            </select>
+                        <div class="row checkbox_aportacion " id="Otros" style="display:none;">
+                          ¿Cuál? 
+                          <br>
+                          <input class="texto"  type="text"  placeholder="Motivo de cancelación"    >
+                        </div>
+           </div>
+        <div class="text-left ">
+          <input type="checkbox" onchange="javascript:checar1()"  disabled id="spregun1"  />
+           <div class="bloque_aviso_confirma"><h5>¿Estás seguro de que deseas cancelar tu aportacion única?</h5></div>
+        </div>
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button class="btn btn-default m-r2" type="button" data-dismiss="modal">REGRESAR</button>
+              <button  class="btn btn-afore m-r2 "  type="button" id="boton1" value="Aceptar" data-dismiss="modal"  name="boton1"  disabled="true" />ACEPTAR</buttom>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--FIN POPUP ELIMINA UNICA-->
+
+
+<!--POPUP ELIMINA DOMICILIADA-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-eliminar-domiciliada"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Resumen de Aportación</h3>
+       </div>
+       <div class="modal-body text-center"> <!-- CUERPO DEL MENSAJE -->
+                              <div class="row " >
+                                <div class="col-xs-12 text-center">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 2</strong></h5>
+                                </div>
+                              </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación domiciliada</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de inversión</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">SIEFORE Adicional AV2 (2 años)</h5></div>
+                               </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Día de cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Lunes</h5></div>
+                               </div>
+                               <br>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de cuenta</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">CLABE</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Clabe Interbancaria</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">************1234</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Nombre Apellido</h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$10,000.00</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Menor 1</h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$5,000.00</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Menor 2</h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$5,000.00</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Beneficio fiscal</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Si</h5></div>
+                               </div>
+       </div>
+       <div class="modal-footer">
+         <div class="row row_sin text-left" >
+            ¿Porqué deseas cancelar tu aportación?
+            <select name="combo" class="campo_select form-control"  onchange="javascript:sp2(), Otros2OnChange(this)"   >
+             <option  selected >Selecciona un motivo</option>
+             <option value="No requiero mas domiciliaciones">No requiero mas domiciliaciones</option> 
+             <option value="Por problemas econónmicos">Por problemas econónmicos</option>
+             <option value="Me surgío un imprevisto">Me surgío un imprevisto</option>
+             <option value="Cambiare de banco para domiciliar">Cambiare de banco para domiciliar</option>
+             <option value="Invertiré en otro tipo de aportación">Invertiré en otro tipo de aportación</option>
+             <option value="Otros2">Otros</option>
+            </select>
+                        <div class="row checkbox_aportacion " id="Otros2" style="display:none;">
+                          ¿Cuál? 
+                          <br>
+                          <input class="texto"  type="text"  placeholder="Motivo de cancelación"    >
+                        </div>
+           </div>
+        <div class="text-left ">
+          <input type="checkbox" onchange="javascript:checar2()" disabled id="spregun2" />
+           <div class="bloque_aviso_confirma"><h5>¿Estás seguro de que deseas cancelar tu domiciliación?</h5></div>
+        </div>
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button class="btn btn-default m-r2" type="button" data-dismiss="modal">REGRESAR</button>
+              <button  class="btn btn-afore m-r2 "  type="button" id="boton2" value="Aceptar" data-dismiss="modal"  name="boton2"  disabled="true" />ACEPTAR</buttom>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+<!--FIN POPUP ELIMINA DOMICILIADA-->
+
+
+
+<!--POPUP PAUSA DOMICILIADA-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-pausar-domiciliada"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Resumen de Aportación</h3>
+       </div>
+       <div class="modal-body text-center"> 
+
+        <!-- CUERPO DEL MENSAJE -->
+                              <div class="row">
+                                <div class="col-xs-12 text-center ">
+                                  <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 2</strong></h5>
+                                </div>
+                               </div>
+                               <br>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Aportación única</h5></div>
+                               </div>
+                               <div class="row " >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+                               </div>
+                               <div class="row" >
+                                <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+                                <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+                               </div>
+                               
+       </div>
+       <div class="modal-footer">
+        <div class="row row_sin text-left" >
+            Coloca la fecha de reactivacion: <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Recuerda que no puedes pausar por mas de 3 meses tu Domiciliacion."></a>
+            <input class="fecha"   id="txtDate" type="text" placeholder="dd/mm/aaaa"  onchange="javascript:sp3()" />
+           </div>
+        <div class="text-left ">
+          <input type="checkbox" onchange="javascript:checar3()"  disabled id="spregun3"  />
+           <div class="bloque_aviso_confirma"><h5>¿Estás seguro de pausar tu domiciliación?</h5></div>
+        </div>
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button class="btn btn-default m-r2" type="button" data-dismiss="modal">REGRESAR</button>
+              <button  class="btn btn-afore m-r2 "  type="button" id="boton3" value="Aceptar" data-dismiss="modal"  name="boton3"  disabled="true" />ACEPTAR</buttom>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--FIN POPUP PAUSA DOMICILIADA-->
+
+
+
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        $(function () {
+        	$('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+      <script type="text/javascript">
+
+              $("input[data-type='currency']").on({
+                  keyup: function() {
+                    formatCurrency($(this));
+                  },
+                  blur: function() { 
+                    formatCurrency($(this), "blur");
+                  }
+              });
+
+
+              function formatNumber(n) {
+                // format number 1000000 to 1,234,567
+                return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+
+
+              function formatCurrency(input, blur) {
+                // appends $ to value, validates decimal side
+                // and puts cursor back in right position.
+                
+                // get input value
+                var input_val = input.val();
+                
+                // don't validate empty input
+                if (input_val === "") { return; }
+                
+                // original length
+                var original_len = input_val.length;
+
+                // initial caret position 
+                var caret_pos = input.prop("selectionStart");
+                  
+                // check for decimal
+                if (input_val.indexOf(".") >= 0) {
+
+                  // get position of first decimal
+                  // this prevents multiple decimals from
+                  // being entered
+                  var decimal_pos = input_val.indexOf(".");
+
+                  // split number by decimal point
+                  var left_side = input_val.substring(0, decimal_pos);
+                  var right_side = input_val.substring(decimal_pos);
+
+                  // add commas to left side of number
+                  left_side = formatNumber(left_side);
+
+                  // validate right side
+                  right_side = formatNumber(right_side);
+                  
+                  // On blur make sure 2 numbers after decimal
+                  if (blur === "blur") {
+                    right_side += "00";
+                  }
+                  
+                  // Limit decimal to only 2 digits
+                  right_side = right_side.substring(0, 2);
+
+                  // join number by .
+                  input_val = "$" + left_side + "." + right_side;
+
+                } else {
+                  // no decimal entered
+                  // add commas to number
+                  // remove all non-digits
+                  input_val = formatNumber(input_val);
+                  input_val = "$" + input_val;
+                  
+                  // final formatting
+                  if (blur === "blur") {
+                    input_val += ".00";
+                  }
+                }
+                
+                // send updated string to input
+                input.val(input_val);
+
+                // put caret back in the right position
+                var updated_len = input_val.length;
+                caret_pos = updated_len - original_len + caret_pos;
+                input[0].setSelectionRange(caret_pos, caret_pos);
+              }
+      </script>
+
+
+<script>
+function checar1(){
+    if (boton1.disabled == true){
+        boton1.disabled = false;
+    }else{
+        boton1.disabled = true;
+    }
+}
+function checar2(){
+    if (boton2.disabled == true){
+        boton2.disabled = false;
+    }else{
+        boton2.disabled = true;
+    }
+}
+function checar3(){
+    if (boton3.disabled == true){
+        boton3.disabled = false;
+    }else{
+        boton3.disabled = true;
+    }
+}
+function s1(){
+    if (sig1.disabled == true){
+        sig1.disabled = false;
+    }else{
+        sig1.disabled = false;
+    }
+}
+function s2(){
+    if (sig2.disabled == true){
+        sig2.disabled = false;
+    }else{
+        sig2.disabled = false;
+    }
+}
+function s3(){
+    if (sig3.disabled == true){
+        sig3.disabled = false;
+    }else{
+        sig3.disabled = false;
+    }
+}
+function s4(){
+    if (sig4.disabled == true){
+        sig4.disabled = false;
+    }else{
+        sig4.disabled = false;
+    }
+}
+
+function p1(){
+    if (pregun1.disabled == true){
+        pregun1.disabled = false;
+    }else{
+        pregun1.disabled = false;
+    }
+}
+function p2(){
+    if (pregun2.disabled == true){
+        pregun2.disabled = false;
+    }else{
+        pregun2.disabled = false;
+    }
+}
+function p3(){
+    if (pregun3.disabled == true){
+        pregun3.disabled = false;
+    }else{
+        pregun3.disabled = false;
+    }
+}
+function sp1(){
+    if (spregun1.disabled == true){
+        spregun1.disabled = false;
+    }else{
+        spregun1.disabled = false;
+    }
+}
+function sp2(){
+    if (spregun2.disabled == true){
+        spregun2.disabled = false;
+    }else{
+        spregun2.disabled = false;
+    }
+}
+
+function sp3(){
+    if (spregun3.disabled == true){
+        spregun3.disabled = false;
+    }else{
+        spregun3.disabled = false;
+    }
+}
+</script>
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Initialize tooltips
+    
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+</script>
+
+<script type="text/javascript">
+                                function pagoOnChange(sel) {
+      if (sel.value=="CLABE"){
+           divC = document.getElementById("nCuenta");
+           divC.style.display = "";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "none";
+
+      }else{
+
+           divC = document.getElementById("nCuenta");
+           divC.style.display="none";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "";
+      }
+}
+                              </script>
+
+  <script type="text/javascript">
+                                function OtrosOnChange(sel) {
+      if (sel.value=="Otros"){
+           divC = document.getElementById("Otros");
+           divC.style.display = "";
+
+      }
+}
+                              </script>
+
+  <script type="text/javascript">
+                                function Otros2OnChange(sel) {
+      if (sel.value=="Otros2"){
+           divC = document.getElementById("Otros2");
+           divC.style.display = "";
+
+      }
+}
+                              </script>
+
+  <script>
+    var J = Payment.J,
+      numeric = document.querySelector('[data-numeric]'),
+      number = document.querySelector('.cc-number'),
+      exp = document.querySelector('.cc-exp'),
+      cvc = document.querySelector('.cc-cvc'),
+      validation = document.querySelector('.validation');
+
+    Payment.restrictNumeric(numeric);
+    Payment.formatCardNumber(number, 16);
+    Payment.formatCardExpiry(exp);
+    Payment.formatCardCVC(cvc);
+
+    document.querySelector('form').onsubmit = function(e) {
+      e.preventDefault();
+      J.toggleClass(document.querySelectorAll('input'), 'invalid');
+      J.removeClass(validation, 'passed failed');
+
+      var cardType = Payment.fns.cardType(J.val(number));
+
+      J.toggleClass(number, 'invalid', !Payment.fns.validateCardNumber(J.val(number)));
+      J.toggleClass(exp, 'invalid', !Payment.fns.validateCardExpiry(Payment.cardExpiryVal(exp)));
+
+      J.toggleClass(cvc, 'invalid', !Payment.fns.validateCardCVC(J.val(cvc), cardType));
+
+      if (document.querySelectorAll('.invalid').length) {
+        J.addClass(validation, 'failed');
+      } else {
+        J.addClass(validation, 'passed');
+      }
+    }
+  </script>
+<script type="text/javascript">function validaNumericos(event) {
+    if(event.charCode >= 48 && event.charCode <= 57){
+      return true;
+     }
+     return false;        
+}</script>
+
+
+<script>
+  $(function() {
+   $('#txtDate').datepicker({ 
+       beforeShowDay: $.datepicker.noWeekends,
+       minDate: '+0d', maxDate: '+2m' 
+   });
+});
+$('#datepicker').datepicker({
+    daysOfWeekDisabled: [0,6]
+});
+</script>
+  </body>
+</html>

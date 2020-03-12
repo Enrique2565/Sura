@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script src="js/payment.js"></script>
+  </head>
+  <body>
+ 
+
+
+  
+
+</head>
+<body>
+
+ 
+ 
+<!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+
+
+<!--MIGAS-->
+<div class="container-fluid hidden-xs">
+    <div class="row contenedor_migas">
+      <a href="index.html"  class="migas">Inicio</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Afore</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Mis aportaciones</a>
+      /
+      <a href="crear_aportacion.html"  class="migas">Crear aportación</a>
+      /
+      <a href="aportacion_en_efectivo.html"  class="migas active">En efectivo</a>
+    </div>
+</div>
+<!--FIN MIGAS-->
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont margen_migas">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">Aportación en efectivo</h4>
+    </div>
+
+    <hr>
+<section>
+<div class="wizard">
+  <div class="tab-content tab_sinborde">
+    <div class="tab-pane active" role="tabpanel" id="complete">
+    <div class="tab_content2">
+     <div class="tab-content tab_sinborde">
+      <div class="subtitulo_bloque_aportacion">
+      Ve tu sucursal de preferencia y presenta tu codigo QR  
+      </div>
+
+        <div class="row margen_detalle_efectivo " >
+          <div class="col-md-6">
+          <p><strong>Solicita al cajero que busque en su sistema:</strong></p>
+          <p>1. Tecla: Pago de servicios</p>
+          <p>2. Ingresar la CURP o número de celular</p>
+          <p>3. Seleccionar Aportaciones AFORE</p>
+          <p>4. Ingresar importe y presionar Enter</p>
+          </div>
+          <div class="col-md-6 text-center">
+          <img src="images/codigo_barras.png" class="codigoqr">
+          <br>
+          <a class="btn btn-acciones-afore " href="" >DESCARGAR CÓDIGO QR</a>
+          </div>
+        </div>
+
+
+    <!-- SUCURSALES-->
+        <div class="row  ">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(1).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(2).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(3).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(4).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(5).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(6).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(7).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(8).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(9).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(10).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(11).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(12).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6  text-center">
+            <a href="" class="marcas">
+              <img src="images/Bitmap-xxhdpi-(13).png" width="100%">
+              <div class="texto-marcas">VER SUCURSALES</div>
+            </a>
+          </div>
+        </div>
+    <!-- FIN SUCURSALES-->
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</section>
+</div>
+</div>
+
+<!--FIN MIS APORTACIONES-->
+
+
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+
+
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+     
+
+  </body>
+</html>

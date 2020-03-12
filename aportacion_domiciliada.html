@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script src="js/payment.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/jquery2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  </head>
+  <body>
+ 
+
+
+  
+
+</head>
+<body>
+
+ 
+   <!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+
+<!--MIGAS-->
+<div class="container-fluid hidden-xs">
+    <div class="row contenedor_migas">
+      <a href="index.html"  class="migas">Inicio</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Afore</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Mis aportaciones</a>
+      /
+      <a href="crear_aportacion.html"  class="migas">Crear aportación</a>
+      /
+      <a href="aportacion_domiciliada.html"  class="migas active">Domiciliada</a>
+    </div>
+</div>
+<!--FIN MIGAS-->
+
+
+
+
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont margen_migas">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">Programación de aportación domiciliada</h4>
+    </div>
+
+    <hr>
+
+    <div class="row row_sin">
+      <section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line3"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active bullets2">
+                        <a href="#step0" data-toggle="tab" aria-controls="step0" role="tab" title="Step 0">
+                            <span class="round-tab">
+                                1
+                            </span>
+                        </a>
+                        <p class="texto-pasos active">Nombre de objetivo</p>
+                    </li>
+
+                    <li role="presentation" class="disabled bullets2">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                2
+                            </span>
+                        </a>
+                        <p class="texto-pasos active">Tipo de inversión</p>
+                    </li>
+
+                    <li role="presentation" class="disabled bullets2" >
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                              3
+                            </span>
+                        </a>
+                        <p class="texto-pasos">Fecha de cargo</p>
+                    </li>
+                    <li role="presentation"  class="disabled bullets2" >
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                4
+                            </span>
+                        </a>
+                        <p class="texto-pasos">Datos bancarios</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content tab_sinborde">
+
+                  
+                  <!--NOMBRE-->
+                    <div class="tab-pane active" role="tabpanel" id="step0">
+                        <div class="tab_content2">
+                          <div class="tab-content tab_sinborde">
+                            <div class="subtitulo_bloque_aportacion">
+                               ¿Cómo deseas nombrar tu objetivo?
+                            </div>
+                            <div class="row row-sin-left">
+                              <div class="col-sm-4 checkbox_aportacion ">
+                                 Nombre: 
+                                  <br>
+                                <input class="texto"  type="text" placeholder="Mi aportación" style="width: 100%;" onchange="javascript:s0()"/> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-afore m-r-menos next-step"   href="#step2" id="sig0" name="sig0"   disabled >SIGUIENTE</button></li>
+                        </ul>
+                    </div>
+                  <!--FIN NOMBRE-->
+
+
+                   
+                        
+
+
+                  <!--TIPO-->
+                       <div class="tab-pane" role="tabpanel" id="step1">
+                        <div class="tab_content2">
+                          <div class="tab-content tab_sinborde">
+                            <div class="subtitulo_bloque_aportacion">
+                              Los tipos de inversion son los fondos en los cuales se invierten los recursos para generar rendimientos.
+                            </div>
+                            <div class="row row-sin-left">
+                              <div class="col-sm-4 checkbox_aportacion ">
+                                <input type = "radio" name = "preg1" value = "AV1" onchange="javascript:s1()"/> 
+                                <div class="colapsed_aportacion icono_collapsed_aportacion icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#av1" >
+                                  SIEFORE Adicional AV1 <span  class="small_text ">(1 año)</span> 
+                                </div>
+                                  <div id="av1" class="collapse texto_collapsed">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </div>
+                                <hr class="divisor_opacidad">
+                              </div>
+                              <div class="col-sm-4 checkbox_aportacion">
+                                <input type = "radio" name = "preg1" value = "AV2" onchange="javascript:s1()"/>
+                                <div class="colapsed_aportacion icono_collapsed_aportacion icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#av2" >
+                                  SIEFORE Adicional AV2 <span  class="small_text ">(2 años)</span> 
+                                </div>
+                                  <div id="av2" class="collapse texto_collapsed">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </div>
+                                <hr class="divisor_opacidad">
+                              </div>
+                              <div class="col-sm-4 checkbox_aportacion">
+                                <input type = "radio" name = "preg1" value = "AV3" onchange="javascript:s1()"/> 
+                                <div class="colapsed_aportacion icono_collapsed_aportacion icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#av3" >
+                                  SIEFORE Adicional AV3 <span  class="small_text ">(3 años)</span> 
+                                </div>
+                                  <div id="av3" class="collapse texto_collapsed">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </div>
+                                <hr class="divisor_opacidad">
+                              </div>
+                            </div>
+                            <div class="row row-sin-left">
+                              <div class="col-sm-4 checkbox_aportacion ">
+                                <input type = "radio" name = "preg1" value = "Plazo" onchange="javascript:s1()"/> 
+                                <div class="colapsed_aportacion icono_collapsed_aportacion icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#plazo" >
+                                  Perspectiva Largo Plazo
+                                </div>
+                                  <div id="plazo" class="collapse texto_collapsed">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </div>
+                                <hr class="divisor_opacidad">
+                              </div>
+                              <div class="col-sm-4 checkbox_aportacion">
+                                <input type = "radio" name = "preg1" value = "Retiro" onchange="javascript:s1()"/>
+                                <div class="colapsed_aportacion icono_collapsed_aportacion icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#retiro" >
+                                  Complementaria Retiro
+                                </div>
+                                  <div id="retiro" class="collapse texto_collapsed">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                  </div>
+                                <hr class="divisor_opacidad">
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                          
+                          <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step m-r-menos" href="#step0" >ANTERIOR</button></li>
+                                <li><button type="button" class="btn btn-afore m-r-menos next-step"  href="#step2" id="sig1" name="sig1"   disabled >SIGUIENTE</button></li>
+                            </ul>
+
+                    </div>
+                    <!--FIN TIPO-->
+
+
+                    <!--FECHA-->
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="tab_content2">
+                          <div class="tab-content tab_sinborde">
+                            <div class="subtitulo_bloque_aportacion">
+                               Días en los que se realizaran los cargos a tu tarjeta de débito
+                            </div>
+                            <div class="row row-sin-left">
+                              <div class="col-sm-4 col-xs-12 checkbox_aportacion ">
+                                  Periodicidad del cargo: 
+                                  <br>
+                                  <select name="combo" class="campo_select form-control"  on onChange="fechaOnChange(this)" >
+                                          <option  selected >Selecciona la priodicidad</option>
+                                          <option value="Semanal">Semanal</option> 
+                                          <option value="Quincena">Quincenal</option>
+                                          <option value="Mensual">Mensual</option> 
+                                  </select>
+                                  
+                                  </div>
+                                  <div class="col-sm-4 checkbox_aportacion " id="nsemana" style="display:none;">
+                                            Dia de cargo: 
+                                            <br>
+                                            <select name="combo" class="campo_select form-control"  onchange="javascript:s2()">
+                                              <option  selected >Selecciona el dia</option>
+                                              <option value="Lunes">Lunes</option> 
+                                              <option value="Martes">Martes</option>
+                                              <option value="Miercoles">Miercoles</option>
+                                              <option value="Jueves">Jueves</option> 
+                                              <option value="Viernes">Viernes</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-4 checkbox_aportacion " id="nquincena" style="display:none;">
+                                        Dias de cargo:  
+                                        <br>
+                                        <select name="combo" class="campo_select form-control"  onchange="javascript:s2()">
+                                          <option  selected >Selecciona los dias</option>
+                                          <option value="1 y 16">1 y 16</option> 
+                                          <option value="2 y 17">2 y 17</option>
+                                          <option value="3 y 18">3 y 18</option>
+                                          <option value="4 y 19">4 y 19</option> 
+                                          <option value="5 y 20">5 y 20</option>
+                                          <option value="6 y 21">6 y 21</option> 
+                                          <option value="7 y 22">7 y 22</option>
+                                          <option value="8 y 23">8 y 23</option>
+                                          <option value="9 y 24">9 y 24</option> 
+                                          <option value="10 y 25">10 y 25</option>
+                                          <option value="11 y 26">11 y 26</option> 
+                                          <option value="12 y 27">12 y 27</option>
+                                          <option value="13 y 28">13 y 28</option>
+                                          <option value="14 y 29">14 y 29</option> 
+                                          <option value="15 y 30">15 y 30</option>
+                                        </select>
+                                    </div>
+                              <div class="col-sm-4 checkbox_aportacion " id="nmes" style="display:none;">
+                                 Día de cargo: 
+                                  <br>
+                                <select name="combo" class="campo_select form-control"  onchange="javascript:s2()">
+                                          <option  selected >Selecciona el día</option>
+                                          <option value="1">1</option> 
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option> 
+                                          <option value="5">5</option>
+                                          <option value="6">6</option> 
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option> 
+                                          <option value="10">10</option>
+                                          <option value="11">11</option> 
+                                          <option value="12">12</option>
+                                          <option value="13">13</option>
+                                          <option value="14">14</option> 
+                                          <option value="15">15</option>
+                                          <option value="16">16</option> 
+                                          <option value="17">17</option>
+                                          <option value="18">18</option>
+                                          <option value="19">19</option> 
+                                          <option value="20">20</option>
+                                          <option value="21">21</option> 
+                                          <option value="22">22</option>
+                                          <option value="23">23</option>
+                                          <option value="24">24</option> 
+                                          <option value="25">25</option>
+                                          <option value="26">26</option> 
+                                          <option value="27">27</option>
+                                          <option value="28">28</option>
+                                          <option value="29">29</option> 
+                                          <option value="30">30</option>
+                                        </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div> <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step m-r-menos" href="#step1" >ANTERIOR</button></li>
+                            <li><button type="button" class="btn btn-afore m-r-menos next-step"   href="#step3" id="sig2" name="sig2"   disabled >SIGUIENTE</button></li>
+                        </ul>
+                    </div>
+
+                    <!--FIN FECHA-->
+
+
+                    <!--BANCO-->
+                    <div class="tab-pane " role="tabpanel" id="step3">
+                        <div class="tab_content2">
+                          <div class="tab-content tab_sinborde">
+                            <div class="subtitulo_bloque_aportacion">
+                              La cuenta bancaria de donde se hara el cobro debe estar a tu nombre
+                            </div>
+                            <div class="row row-sin-left">
+                              <div class="col-sm-3 checkbox_aportacion ">
+                                        Banco emisor: 
+                                        <br>
+                                        <select name="combo" class="campo_select form-control"  onchange="javascript:p1()" >
+                                          <option  selected >Selecciona una opción</option>
+                                          <option value="Banamex">Banamex</option> 
+                                          <option value="Bancomer">BBVA Bancomer</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3 checkbox_aportacion">
+                                         Tipo de cuenta: 
+                                        <br>
+                                        <select name="combo" class="campo_select form-control"  disabled id="pregun1" name="pregun1"  on onChange="pagoOnChange(this)" >
+                                          <option  selected >Selecciona una opción</option>
+                                          <option value="CLABE">CLABE</option> 
+                                          <option value="Tarjeta">No. de Tarjeta</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3 checkbox_aportacion " id="nCuenta" style="display:none;">
+                                        Clabe interbancaria: 
+                                        <br>
+                                        <input class="texto validanumericos"  type="text"  placeholder="000000000000000000"    onchange="javascript:p3()" maxlength="18" onkeypress='return validaNumericos(event)' id="claveinter">
+                                        <div id="result_clave" class="alerta"></div>
+                                    </div>
+                                    <div class="col-sm-3 checkbox_aportacion " id="nTargeta" style="display:none;">
+                                        No. de Tarjeta: 
+                                        <br>
+                                        <input class="texto validanumericos"  type="text"  placeholder="0000 0000 0000 0000"    onchange="javascript:p3()" maxlength="16" onkeypress='return validaNumericos(event)'  id="tarjeta">
+                                        <div id="result_tarjeta" class="alerta"></div>
+                                    </div>
+                                  <div class="col-sm-3 col-xs-12 checkbox_aportacion ">
+                                        Monto de aportación: 
+                                        <br>
+                                        <span class="texto_nombres_montos">Nombre Apellido:</span>
+                                        <br>
+                                        <input type="text" class="number " name="pregun3" id="pregun3" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"  data-type="currency" placeholder="$500.00"   disabled    onchange="javascript:s3()" oninput="monto(this);"  >
+                                        <div id="rst" class="alerta"></div>
+                                        <span class="texto_nombres_montos">Menor 1: </span>
+                                        <br>
+                                        <input type="text" class="number" name="pregun3_1" id="pregun3_1" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$0.00"  disabled   onchange="javascript:s3()">
+                                        <span class="texto_nombres_montos">Menor 2: </span>
+                                        <br>
+                                        <input type="text" class="number" name="pregun3_2" id="pregun3_2" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$0.00"  disabled   onchange="javascript:s3()">
+                                        
+                                  </div>
+                              </div>
+                            </div>
+                          <div class="text-left sin-m-b">
+                                  <input type="checkbox" />
+                                   <div class="opcion_facturar"><h5>Aportación deducible de de impuestos
+                                    <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="" data-original-title="Al seleccionar esta opción, las aportaciones se considerarán como deducibles y debes incluirlas en tu declaración anual de impuestos, con esto obtienes beneficios fiscales que te permiten ahorrar más a largo plazo. El límite deducible se actualiza cada año incrementándose. Si retiras las aportaciones deducibles antes de los 65 años se realizará una retención del 20% de ISR.*Las aportaciones a menores no son deducibles de impuestos."></a></h5></div>
+                          </div>  
+                          <!--<div class="subtitulo_bloque_aportacion">*Las aportaciones a menores no son deducibles de impuestos.</div>-->
+                        </div>
+
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step m-r-menos" href="#step3" >ANTERIOR</button></li>
+                            <li><button type="button" class="btn btn-afore m-r-menos"  data-toggle="modal" data-target="#modal-avisolegal" id="sig3" name="sig3"   disabled >FINALIZAR</button></li>
+                        </ul>
+                       </div>
+                          <!--FIN BANCO-->
+
+                     
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+
+
+  </div>
+</div>
+
+<!--FIN MIS APORTACIONES-->
+
+
+
+
+
+
+<!--POPUP-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-avisolegal"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Resumen de Aportación</h3>
+       </div>
+       <div class="modal-body text-center"> <!-- CUERPO DEL MENSAJE -->
+           <h5 class="m-t"><strong>NOMBRE DE OBJETIVO 2</strong></h5>
+           <br>
+           <div class="row " >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de aportación</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">Aportación única</h5></div>
+           </div>
+           <div class="row " >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de inversión</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">SIEFORE Adicional AV2 (2 años)</h5></div>
+           </div>
+           <br>
+           <div class="row " >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Periodicidad del cargo</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">Semanal</h5></div>
+           </div>
+           <div class="row " >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Día de cargo</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">Lunes</h5></div>
+           </div>
+           <br>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Banco emisor</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">Bancomer</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Tipo de cuenta</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">CLABE</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5 class="m-t"><strong>Clabe Interbancaria</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">************1234</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Monto</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">$20,000.00</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Nombre Apellido</h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$20,000.00</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Menor 1</h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$5,000.00</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5  class="m-t detalle_menores">Menor 2</h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t detalle_menores">$5,000.00</h5></div>
+           </div>
+           <div class="row" >
+            <div class="col-xs-6 text-left"><h5  class="m-t"><strong>Beneficio fiscal</strong></h5></div>
+            <div class="col-xs-6 text-right"><h5 class="m-t">Si</h5></div>
+           </div>
+       </div>
+       <div class="modal-footer">
+        <div class="text-left ">
+          <input type="checkbox" onchange="javascript:checar()" />
+           <div class="bloque_aviso_confirma"><h5>Acepto que se haga el cargo en la fecha indicada a la cuenta ****5678</h5></div>
+        </div>
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button  class="btn btn-default m-r2" type="button" data-dismiss="modal">REGRESAR</button>
+              <button onclick="window.location='Notificación_creacion.html'" class="btn btn-afore m-r2 "  type="button" id="boton" value="Aceptar" data-dismiss="modal"  name="boton"  disabled="true" />GUARDAR</buttom>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--FIN POPUP-->
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+      <script type="text/javascript">
+
+              $("input[data-type='currency']").on({
+                  keyup: function() {
+                    formatCurrency($(this));
+                  },
+                  blur: function() { 
+                    formatCurrency($(this), "blur");
+                  }
+              });
+
+
+              function formatNumber(n) {
+                // format number 1000000 to 1,234,567
+                return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+
+
+              function formatCurrency(input, blur) {
+                // appends $ to value, validates decimal side
+                // and puts cursor back in right position.
+                
+                // get input value
+                var input_val = input.val();
+                
+                // don't validate empty input
+                if (input_val === "") { return; }
+                
+                // original length
+                var original_len = input_val.length;
+
+                // initial caret position 
+                var caret_pos = input.prop("selectionStart");
+                  
+                // check for decimal
+                if (input_val.indexOf(".") >= 0) {
+
+                  // get position of first decimal
+                  // this prevents multiple decimals from
+                  // being entered
+                  var decimal_pos = input_val.indexOf(".");
+
+                  // split number by decimal point
+                  var left_side = input_val.substring(0, decimal_pos);
+                  var right_side = input_val.substring(decimal_pos);
+
+                  // add commas to left side of number
+                  left_side = formatNumber(left_side);
+
+                  // validate right side
+                  right_side = formatNumber(right_side);
+                  
+                  // On blur make sure 2 numbers after decimal
+                  if (blur === "blur") {
+                    right_side += "00";
+                  }
+                  
+                  // Limit decimal to only 2 digits
+                  right_side = right_side.substring(0, 2);
+
+                  // join number by .
+                  input_val = " " + left_side + "." + right_side;
+
+                } else {
+                  // no decimal entered
+                  // add commas to number
+                  // remove all non-digits
+                  input_val = formatNumber(input_val);
+                  input_val = " " + input_val;
+                  
+                  // final formatting
+                  if (blur === "blur") {
+                    input_val += ".00";
+                  }
+                }
+                
+                // send updated string to input
+                input.val(input_val);
+
+                // put caret back in the right position
+                var updated_len = input_val.length;
+                caret_pos = updated_len - original_len + caret_pos;
+                input[0].setSelectionRange(caret_pos, caret_pos);
+              }
+      </script>
+      
+
+
+<script>
+function checar(){
+    if (boton.disabled == true){
+        boton.disabled = false;
+    }else{
+        boton.disabled = true;
+    }
+}
+function s0(){
+    if (sig0.disabled == true){
+        sig0.disabled = false;
+    }else{
+        sig0.disabled = false;
+    }
+}
+function s1(){
+    if (sig1.disabled == true){
+        sig1.disabled = false;
+    }else{
+        sig1.disabled = false;
+    }
+}
+function s2(){
+    if (sig2.disabled == true){
+        sig2.disabled = false;
+    }else{
+        sig2.disabled = false;
+    }
+}
+function s3(){
+    if (sig3.disabled == true){
+        sig3.disabled = false;
+    }else{
+        sig3.disabled = false;
+    }
+}
+function s4(){
+    if (sig4.disabled == true){
+        sig4.disabled = false;
+    }else{
+        sig4.disabled = false;
+    }
+}
+
+function p1(){
+    if (pregun1.disabled == true){
+        pregun1.disabled = false;
+    }else{
+        pregun1.disabled = false;
+    }
+}
+function p2(){
+    if (pregun2.disabled == true){
+        pregun2.disabled = false;
+    }else{
+        pregun2.disabled = false;
+    }
+}
+function p3(){
+    if (pregun3.disabled == true){
+        pregun3.disabled = false;
+        pregun3_1.disabled = true;
+        pregun3_1.disabled = false;
+        pregun3_2.disabled = true;
+        pregun3_2.disabled = false;
+    }
+    else{
+        pregun3.disabled = false;
+        pregun3_1.disabled = false;
+    }
+}
+function sp1(){
+    if (spregun1.disabled == true){
+        spregun1.disabled = false;
+    }else{
+        spregun1.disabled = false;
+    }
+}
+function sp2(){
+    if (spregun2.disabled == true){
+        spregun2.disabled = false;
+    }else{
+        spregun2.disabled = false;
+    }
+}
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Initialize tooltips
+    
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+</script>
+
+<script type="text/javascript">
+                                function pagoOnChange(sel) {
+      if (sel.value=="CLABE"){
+           divC = document.getElementById("nCuenta");
+           divC.style.display = "";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "none";
+
+      }else{
+
+           divC = document.getElementById("nCuenta");
+           divC.style.display="none";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "";
+      }
+}
+                              </script>
+
+<script type="text/javascript">
+      function fechaOnChange(sel) {
+      if (sel.value=="Semanal"){
+           divC = document.getElementById("nsemana");
+           divC.style.display = "";
+
+           divT = document.getElementById("nquincena");
+           divT.style.display = "none";
+
+           divT = document.getElementById("nmes");
+           divT.style.display = "none";
+
+      }else if (sel.value=="Quincena"){
+
+           divC = document.getElementById("nsemana");
+           divC.style.display="none";
+
+           divT = document.getElementById("nquincena");
+           divT.style.display = "";
+
+           divT = document.getElementById("nmes");
+           divT.style.display = "none";
+
+      }else if(sel.value=="Mensual"){
+
+           divC = document.getElementById("nsemana");
+           divC.style.display="none";
+
+           divT = document.getElementById("nquincena");
+           divT.style.display = "none";
+
+           divT = document.getElementById("nmes");
+           divT.style.display = "";
+      }
+}
+                              </script>
+
+ <script>
+function monto(n) {
+   var num = n.value;
+   if (parseFloat(num) >= 500 && parseFloat(num) <= 5000) {
+      document.getElementById('rst').innerHTML = '';
+   } else {
+      document.getElementById('rst').innerHTML = 'Coloca M&iacute;nimo $500 y m&aacute;ximo $5,000';
+   }
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+    var regex = /^[0-9]{16}|(([0-9]{4}\s){3}[0-9]{3,4})$/; // 16 digitos o de 4 en 4 separados por espacios.
+
+function validate() {
+ result_tarjeta.innerHTML = regex.test(tarjeta.value) ? ' ' : 'Numero de tarjeta invalido';
+}
+validate();
+document.addEventListener('keyup', validate);
+  </script>
+
+  <script type="text/javascript">
+    var regex2 = /^[0-9]{18}/; // 18 digitos 
+
+function validate() {
+ result_clave.innerHTML = regex2.test(claveinter.value) ? ' ' : 'Clave interbancaria invalida';
+}
+validate();
+document.addEventListener('keyup', validate);
+  </script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script src="js/payment.js"></script>
+  </head>
+  <body>
+ 
+
+
+  
+
+</head>
+<body>
+
+ 
+    <!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+
+
+<!--MIGAS-->
+<div class="container-fluid hidden-xs">
+    <div class="row contenedor_migas">
+      <a href="index.html"  class="migas">Inicio</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Afore</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Mis aportaciones</a>
+      /
+      <a href="crear_aportacion.html"  class="migas">Crear aportación</a>
+      /
+      <a href="aportacion_no_recurrente.html"  class="migas active">En portal bancario</a>
+    </div>
+</div>
+<!--FIN MIGAS-->
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont margen_migas">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">Aportación a través de mi portal bancario</h4>
+    </div>
+
+    <hr>
+
+    <div class="row row_sin">
+      <section>
+        <div class="wizard">
+            <form role="form">
+                <div class="tab-content tab_sinborde">
+                    
+                   
+
+
+                    <div class="tab-pane active" role="tabpanel" id="complete">
+
+
+                              <!--FECHA DE APORTACION-->
+                              <div class="tab_content2 ">
+                                <div class="tab-content tab_sinborde">
+                                  <div class="subtitulo_bloque_aportacion">
+                                    Selecciona el banco en el que desear realizar tu aportación
+                                  </div>
+                                  <div class="row row-sin-left">
+                                    <div class="col-sm-3 checkbox_aportacion ">
+                                        Banco emisor: 
+                                        <br>
+                                        <select name="combo" class="campo_select form-control"  onchange="javascript:p3()" >
+                                          <option  selected >Selecciona tu banco</option>
+                                          <option value="Banamex">Banamex</option> 
+                                          <option value="Bancomer">BBVA Bancomer</option>
+                                          <option value="Scotiabank">Scotiabank</option> 
+                                          <option value="Santader">Santader</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3 checkbox_aportacion ">
+                                        Monto de aportación: 
+                                        <br>
+                                        <input type="text" class="number " name="pregun3" id="pregun3" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"  data-type="currency" placeholder="$500.00"  disabled  oninput="monto(this);" onchange="javascript:s4()"  oninvalid="this.setCustomValidity(' ')" >
+                                        <div id="rst" class="alerta"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              
+                                <!--FIN FECHA DE APORTACION-->
+
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-afore m-r-menos"  data-toggle="modal" data-target="#modal-avisolegal" id="sig4" name="sig4"   disabled >ACEPTAR</button></li>
+                            </ul>
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </section>
+    </div>
+
+
+  </div>
+</div>
+
+<!--FIN MIS APORTACIONES-->
+
+
+
+
+<!--POPUP-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-avisolegal"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Datos de la cuenta</h3>
+       <h5 class="text-center sin-m-b ">Se realizará la aportación voluntaria con la siguiente información</h5>
+       </div>
+       <div class="modal-body text-center"> <!-- CUERPO DEL MENSAJE -->
+           <div class="row row_sin text-center" ><h5 class="m-t"><strong>Numero de seguridad social (NNS)</strong></h5></div>
+           <div class="row row_sin text-center" ><h5 class="m-t">12345678901</h5></div>
+           <div class="row row_sin text-center" ><h5  class="m-t"><strong>Nombre</strong></h5></div>
+           <div class="row  row_sin text-center" ><h5 class="m-t">Nombre Apellidp Apellidom</h5></div>
+           <div class="row row_sin text-center" ><h5  class="m-t"><strong>CURP</strong></h5></div>
+           <div class="row  row_sin text-center" ><h5 class="m-t">AAAA000000AA0</h5></div>
+           <div class="row row_sin text-center" ><h5  class="m-t"><strong>Monto</strong></h5></div>
+           <div class="row  row_sin text-center" ><h5 class="m-t">$20,000.00</h5></div>
+           
+       </div>
+       <div class="modal-footer">
+        <div class="text-left ">
+          <input type="checkbox" onchange="javascript:checar()" />
+           <div class="bloque_aviso_confirma">
+            <h5>Después de aceptar la operación, ingresarás al portal de tu banco para concluir la aportación. </h5>
+            <h5 class="small_text">Tu aportación se verá refleajada un día hábil después. Si existen problemas, por favor comunícate con nosotros sin costo al 01 4433 10 81 92 o acude a un Módulo de Servicios para asesorarte.</h5></div>
+        </div>
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button  class="btn btn-default m-r2" type="button" data-dismiss="modal">REGRESAR</button>
+              <button onclick="window.location='#'" class="btn btn-afore m-r2 "  type="button" id="boton" value="Aceptar" data-dismiss="modal"  name="boton"  disabled="true" />ACEPTAR</buttom>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--FIN POPUP-->
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+
+
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        $(function () {
+        	$('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+      <script type="text/javascript">
+
+              $("input[data-type='currency']").on({
+                  keyup: function() {
+                    formatCurrency($(this));
+                  },
+                  blur: function() { 
+                    formatCurrency($(this), "blur");
+                  }
+              });
+
+
+              function formatNumber(n) {
+                // format number 1000000 to 1,234,567
+                return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+
+
+              function formatCurrency(input, blur) {
+                // appends $ to value, validates decimal side
+                // and puts cursor back in right position.
+                
+                // get input value
+                var input_val = input.val();
+                
+                // don't validate empty input
+                if (input_val === "") { return; }
+                
+                // original length
+                var original_len = input_val.length;
+
+                // initial caret position 
+                var caret_pos = input.prop("selectionStart");
+                  
+                // check for decimal
+                if (input_val.indexOf(".") >= 0) {
+
+                  // get position of first decimal
+                  // this prevents multiple decimals from
+                  // being entered
+                  var decimal_pos = input_val.indexOf(".");
+
+                  // split number by decimal point
+                  var left_side = input_val.substring(0, decimal_pos);
+                  var right_side = input_val.substring(decimal_pos);
+
+                  // add commas to left side of number
+                  left_side = formatNumber(left_side);
+
+                  // validate right side
+                  right_side = formatNumber(right_side);
+                  
+                  // On blur make sure 2 numbers after decimal
+                  if (blur === "blur") {
+                    right_side += "00";
+                  }
+                  
+                  // Limit decimal to only 2 digits
+                  right_side = right_side.substring(0, 2);
+
+                  // join number by .
+                  input_val = " " + left_side + "." + right_side;
+
+                } else {
+                  // no decimal entered
+                  // add commas to number
+                  // remove all non-digits
+                  input_val = formatNumber(input_val);
+                  input_val = " " + input_val;
+                  
+                  // final formatting
+                  if (blur === "blur") {
+                    input_val += ".00";
+                  }
+                }
+                
+                // send updated string to input
+                input.val(input_val);
+
+                // put caret back in the right position
+                var updated_len = input_val.length;
+                caret_pos = updated_len - original_len + caret_pos;
+                input[0].setSelectionRange(caret_pos, caret_pos);
+              }
+      </script>
+      
+      
+
+
+<script>
+function checar(){
+    if (boton.disabled == true){
+        boton.disabled = false;
+    }else{
+        boton.disabled = true;
+    }
+}
+function s1(){
+    if (sig1.disabled == true){
+        sig1.disabled = false;
+    }else{
+        sig1.disabled = false;
+    }
+}
+function s2(){
+    if (sig2.disabled == true){
+        sig2.disabled = false;
+    }else{
+        sig2.disabled = false;
+    }
+}
+function s3(){
+    if (sig3.disabled == true){
+        sig3.disabled = false;
+    }else{
+        sig3.disabled = false;
+    }
+}
+function s4(){
+    if (sig4.disabled == true){
+        sig4.disabled = false;
+    }else{
+        sig4.disabled = false;
+    }
+}
+
+function p1(){
+    if (pregun1.disabled == true){
+        pregun1.disabled = false;
+    }else{
+        pregun1.disabled = false;
+    }
+}
+function p2(){
+    if (pregun2.disabled == true){
+        pregun2.disabled = false;
+    }else{
+        pregun2.disabled = false;
+    }
+}
+function p3(){
+    if (pregun3.disabled == true){
+        pregun3.disabled = false;
+    }else{
+        pregun3.disabled = false;
+    }
+}
+function sp1(){
+    if (spregun1.disabled == true){
+        spregun1.disabled = false;
+    }else{
+        spregun1.disabled = false;
+    }
+}
+function sp2(){
+    if (spregun2.disabled == true){
+        spregun2.disabled = false;
+    }else{
+        spregun2.disabled = false;
+    }
+}
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Initialize tooltips
+    
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+</script>
+
+<script type="text/javascript">
+                                function pagoOnChange(sel) {
+      if (sel.value=="CLABE"){
+           divC = document.getElementById("nCuenta");
+           divC.style.display = "";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "none";
+
+      }else{
+
+           divC = document.getElementById("nCuenta");
+           divC.style.display="none";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "";
+      }
+}
+                              </script>
+
+
+  <script>
+    var J = Payment.J,
+      numeric = document.querySelector('[data-numeric]'),
+      number = document.querySelector('.cc-number'),
+      exp = document.querySelector('.cc-exp'),
+      cvc = document.querySelector('.cc-cvc'),
+      validation = document.querySelector('.validation');
+
+    Payment.restrictNumeric(numeric);
+    Payment.formatCardNumber(number, 16);
+    Payment.formatCardExpiry(exp);
+    Payment.formatCardCVC(cvc);
+
+    document.querySelector('form').onsubmit = function(e) {
+      e.preventDefault();
+      J.toggleClass(document.querySelectorAll('input'), 'invalid');
+      J.removeClass(validation, 'passed failed');
+
+      var cardType = Payment.fns.cardType(J.val(number));
+
+      J.toggleClass(number, 'invalid', !Payment.fns.validateCardNumber(J.val(number)));
+      J.toggleClass(exp, 'invalid', !Payment.fns.validateCardExpiry(Payment.cardExpiryVal(exp)));
+
+      J.toggleClass(cvc, 'invalid', !Payment.fns.validateCardCVC(J.val(cvc), cardType));
+
+      if (document.querySelectorAll('.invalid').length) {
+        J.addClass(validation, 'failed');
+      } else {
+        J.addClass(validation, 'passed');
+      }
+    }
+  </script>
+<script type="text/javascript">function validaNumericos(event) {
+    if(event.charCode >= 48 && event.charCode <= 57){
+      return true;
+     }
+     return false;        
+}</script>
+
+<script>
+function monto(n) {
+   var num = n.value;
+   if (parseFloat(num) >= 500 && parseFloat(num) <= 5000) {
+      document.getElementById('rst').innerHTML = '';
+   } else {
+      document.getElementById('rst').innerHTML = 'Coloca M&iacute;nimo $500 y m&aacute;ximo $5,000';
+   }
+}
+</script>
+
+  </body>
+</html>

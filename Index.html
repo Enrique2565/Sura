@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/Chart.js" ></script>
+  </head>
+  <body>
+  
+
+<!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+
+
+
+    <!--BANNER-->
+
+    <div class="container-fluid bannerLanding" >
+      <div class="row align-items-center " >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 text-center  ">
+              <p class="textoBanner2" >Mi Patrimonio</p>
+              <h1 class="textoBanner"><strong>$2,407,389</strong><span class="decimales">.18 MXN</span></h1>
+              <p class="textoBanner2">Suma de Inversión y AFORE al <strong>22 Mar 2019</strong></p>
+              <a class="btn btn-afore boton_banner"  href="crear_aportacion.html">APORTACIÓN VOLUNTARIA A TU AFORE</a>
+              <a class="btn btn-inversion boton_banner"  href="#">FONDOS DE INVIERSIÓN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FIN BANNER-->
+
+
+
+
+<!--CONTENIDO-->
+
+<!--TABS-->
+
+<div class="container" style="margin-top: 20px; ">
+
+<ul class="nav nav-tabs " role="tablist">
+  <li class="nav-item active" style="">
+    <a class="nav-link active" href="#afore" role="tab" data-toggle="tab">
+      <div class="hidden-xs icono_tabs"><img src="images/afore_activo.svg"></div>
+      <div>
+          <div class="titulo_tabs">AFORE</div>
+          <div class="cantidad_tabs">$165,079<span class="hidden-xs">.58</span></div>
+      </div>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#inversiones" role="tab" data-toggle="tab">
+      <div class="hidden-xs icono_tabs" ><img src="images/inversion_activo.svg" ></div>
+      <div>
+          <div class="titulo_tabs">INVERSIONES</div>
+          <div class="cantidad_tabs">$2,242,309<span class="hidden-xs">.60</span></div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<!-- FIN TABS-->
+
+<!-- DETALLES -->
+
+<div class="tab-content" >
+
+  <!--AFORE-->
+
+  <div role="tabpanel" class="tab-pane fade in active" id="afore">
+    <div class="row" >
+
+      <!--RETIRO-->
+      <div class="col-md-4">
+        <div class="bloque_borde">
+        <div class="row bloque_titulo" >
+          <div class="col-xs-6 text-left">
+            <h4 class="blanco">Retiro</h4>
+          </div>
+          <div class="col-xs-6 text-right">
+            <h4 class="blanco">$2,059,456.99</h4>
+          </div>
+        </div>
+        
+        <!--IMSS-->
+
+        <div class="row titulo_seccion_tabs" >
+          <div class="col-xs-6 text-left">
+            IMSS
+          </div>
+          <div class="col-xs-6 text-right icono_collapsed icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#imss">
+            $12,778.34
+          </div>
+        </div>
+
+          <div id="imss" class="collapse ">
+            <div class="row content_detalle-tabs " >
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                     
+                        <h5 >
+                        Retiro 1997
+                         </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5>
+                        Cesantía y vejez
+                        </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs ">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                      Cuota social
+                      </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        SAR IMMS 1992
+                        </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+        <!--FIN IMSS-->
+
+        <!--ISSSTE-->
+
+        <div class="row titulo_seccion_tabs" >
+          <div class="col-xs-6 text-left">
+            ISSSTE
+          </div>
+          <div class="col-xs-6 text-right icono_collapsed in icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#issste">
+            $12,778.34
+          </div>
+        </div>
+
+          <div id="issste" class="collapse ">
+            <div class="row content_detalle-tabs " >
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Retiro, Cesantía en edad avanzada y vejez
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        SAR ISSSTE 1992
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Bono de pensión** (Valor actual)
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Aportación de ahorro voluntario
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+        <!--FIN ISSSTE-->
+      </div>
+      </div>
+
+      <!--FIN RETIRO-->
+
+      <!--VIVIENDA-->
+
+      <div class="col-md-4">
+        <div class="bloque_borde">
+        <div class="row bloque_titulo" >
+          <div class="col-xs-6 text-left">
+            <h4 class="blanco">Vivienda</h4>
+          </div>
+          <div class="col-xs-6 text-right">
+            <h4 class="blanco">$59,456.99</h4>
+          </div>
+        </div>
+        
+        <!--INFONAVIT-->
+
+        <div class="row titulo_seccion_tabs" >
+          <div class="col-xs-6 text-left">
+            INFONAVIT
+          </div>
+          <div class="col-xs-6 text-right icono_collapsed icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#infonavit">
+            $12,778.34
+          </div>
+        </div>
+
+          <div id="infonavit" class="collapse ">
+            <div class="row content_detalle-tabs " >
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        SAR INFONAVIT 1992
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5>
+                        INFONAVIT 1997
+                      </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+        <!--FIN INFONAVIT-->
+
+        <!--FOVISSSTE-->
+
+        <div class="row titulo_seccion_tabs" >
+          <div class="col-xs-6 text-left">
+            FOVISSSTE
+          </div>
+          <div class="col-xs-6 text-right icono_collapsed icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#fovissste">
+            $12,778.34
+          </div>
+        </div>
+
+          <div id="fovissste" class="collapse ">
+            <div class="row content_detalle-tabs " >
+                  <div class="sub_content_detalle_tabs ">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        FOVISSSTE 2008*
+                      </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        SAR FOVISSSTE 1992*
+                      </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$2,384.70</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+        <!--FIN FOVISSSTE-->
+      </div>
+      </div>
+
+      <!--FIN VIVIENDA-->
+
+
+      <!--AHORRO-->
+
+      <div class="col-md-4">
+        <div class="bloque_borde">
+        <div class="row bloque_titulo" >
+          <div class="col-xs-6 text-left">
+            <h4 class="blanco">Ahorro voluntario</strong></h4>
+          </div>
+          <div class="col-xs-6 text-right">
+            <h4 class="blanco">$0.00</h4>
+          </div>
+        </div>
+        
+        <!--APORTACIONES-->
+
+        <div class="row titulo_seccion_tabs" >
+          <div class="col-xs-6 text-left">
+            APORTACIONES
+          </div>
+          <div class="col-xs-6 text-right icono_collapsed icono_collapsed-lg icono_collapsed-info collapsed" data-toggle="collapse" data-target="#aportaciones">
+            $0.00
+          </div>
+        </div>
+
+          <div id="aportaciones" class="collapse ">
+            <div class="row content_detalle-tabs " >
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Siefore adicional SAV1
+                        </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5>
+                        Siefore adicional SAV2
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Siefore adicional SAV3
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Perspectiva a largo plazo
+                       </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 >
+                        Complemento retiro
+                        </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+                  <hr class="separador_tabs">
+                  <div class="sub_content_detalle_tabs">
+                    <div class="col-xs-7 text-left icon_help_contenedor">
+                      <a class="mdi mdi-help-circle icon_help" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></a>
+                      <h5 class="icon_help_contenedor">
+                        Ahorro a largo plazo
+                      </h5>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                      <h5>$0.00</h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          
+
+        <!--FIN APORTACIONES-->
+      </div>
+      <a class="btn btn-afore " href="modificar_aportacion.html" style="display: block;">VER DETALLE DE MIS APORTACIONES</a>
+      </div>
+
+      <!--FIN AHORRO-->
+
+
+    </div>
+  </div>
+
+  <!--FIN AFORE-->
+
+  <!--INVERSION-->
+
+  <div role="tabpanel" class="tab-pane fade" id="inversiones">
+
+
+    <!--TABS INVERSIONES-->
+    <ul class="nav sub-nav-bar " role="tablist">
+      <li class="nav-item active" >
+        <a class="nav-link" href="#12345" role="tab" data-toggle="tab" aria-expanded="false">
+          <div>
+              <div class="sub-seccion-tabs">Contrato base 123456</div>
+              <div class="sub-total-tabs">$1,165,079.58</div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#345678" role="tab" data-toggle="tab" aria-expanded="true">
+          <div>
+              <div class="sub-seccion-tabs">Contrato base 3456678</div>
+              <div class="sub-total-tabs">$865,079.58</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <!--FIN TABS INVERSIONES-->
+
+
+    <div class="tab-content2">
+
+
+
+      <div role="tabpanel" class="tab-pane fade  active in" id="12345">
+         <h3>Mis Objetivos</h3>
+           <ul class="nav sub-sub-nav-bar" role="tablist">
+            <li class="nav-item active" style="">
+              <a class="nav-link active" href="#vacaciones" role="tab" data-toggle="tab">
+                <div>
+                    <div class="sub-total-tabs">Vacaciones</div>
+                    <div class="sub-seccion-tabs">Contrato específico 123456</div>
+                    <div class="sub-total-tabs">$1,165,079.58</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#universidad" role="tab" data-toggle="tab">
+                <div>
+                    <div class="sub-total-tabs">Universidad</div>
+                    <div class="sub-seccion-tabs">Contrato específico 123456</div>
+                    <div class="sub-total-tabs">$1,165,079.58</div>
+                </div>
+              </a>
+            </li>
+              <a class="crear_objetivo">
+                   + Crear nuevo objetivo
+              </a>
+          </ul>
+          <div class="tab-content2">
+            <div role="tabpanel" class="tab-pane fade in active" id="vacaciones">
+              <div class="row row_sin mas_info_subcont">
+                 <h4 class="subtitulo_secciones">Resumen de saldo al <strong></strong></h4>
+                 <hr>
+                <div class="col-sm-6">
+                  <div class="chart-container" style="position: relative; width:100%;">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                  <div>
+                    Meta al 2040
+                    $2,500,000.00
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  hola
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade " id="universidad">
+              Inversion 2
+            </div>
+          </div>
+      </div>
+
+
+
+      <div role="tabpanel" class="tab-pane fade" id="345678">
+          <h3>Mis Objetivos</h3>
+           <ul class="nav sub-sub-nav-bar" role="tablist">
+            <li class="nav-item active" style="">
+              <a class="nav-link active" href="#vacaciones2" role="tab" data-toggle="tab">
+                <div>
+                    <div class="sub-total-tabs">Vacaciones 2</div>
+                    <div class="sub-seccion-tabs">Contrato específico 123456</div>
+                    <div class="sub-total-tabs">$1,165,079.58</div>
+                </div>
+              </a>
+            </li>
+              <a class="crear_objetivo">
+                   + Crear nuevo objetivo
+              </a>
+          </ul>
+          <div class="tab-content2">
+            <div role="tabpanel" class="tab-pane fade in active" id="vacaciones2">
+              Inversion 1
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--FIN INVERSION-->
+
+</div>
+
+</div>
+
+<!-- FIN DETALLES -->
+
+<!--FIN CONTENIDO-->
+
+
+
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont ">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">¿Qué tipo de aportación desear realizar?</h4>
+    </div>
+
+    <hr >
+
+    <div class="row row_sin">
+      <div class="wizard">
+                <div class="tab-content tab_sinborde">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+ 
+                        <!--MODELO DE APORTACION-->
+                          <div class="tab-content tab_sinborde">
+                            <div class="row row-sin " > 
+                               <!--APORTACIONES UNICA-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_1.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-credit-card-outline icono_crearav"></i>ÚNICA</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de transferencia electrónica</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_unica.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES UNICAS-->
+                              <!--APORTACIONES DOMICILIADAS-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                      <img src="images/aportaciones_2.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-credit-card-multiple-outline icono_crearav"></i>DOMICILIADA</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Modalidad para ahorrar, solicitando cargos periódicos a tu tarjeta de débito.</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_domiciliada.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES DOMICILIADA-->
+                              <!--APORTACIONES NO RECCURENTES-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_3.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-laptop icono_crearav"></i>EN PORTAL BANCARIO</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de tu portal bancario</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_no_recurrente.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES NO RECURRENTES-->
+                              <!--APORTACIONES EFECTIVO-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_4.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-cash icono_crearav"></i>EN EFECTIVO</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de transferencia electrónica</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_en_efectivo.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES EFECTIVO-->
+                            </div>
+                          </div>
+                          <!--FIN MODELO DE APORTACION-->
+                         
+                    </div>
+                </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<!--FIN MIS APORTACIONES-->
+
+
+
+
+
+
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+
+
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/graficas.js"></script>
+      <script>
+        $(function () {
+        	$('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+       <script>
+
+      var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Depositos", "Rendimientos", "Faltante"],
+                datasets: [{
+                    data: [1156000, 200896, 1143103],
+                    backgroundColor: [
+                      '#89DDDA',
+                      '#6CAFD8',
+                      '#EEECE7'
+                    ],
+                    borderWidth: 0,
+
+                },
+
+                {
+                    data: [{x:0,y:0},{x:0,y:0},{x:0,y:0}],         
+
+            }
+
+                ]
+            },
+            options: {
+                tooltips: {enabled: false,},
+                legend: {display: false},
+                scales: {
+                    yAxes: [{     display: false
+                    }],
+                    xAxes: [{ display: false
+
+                    }]
+                },
+
+            }
+        });
+
+        </script>
+  </body>
+</html>

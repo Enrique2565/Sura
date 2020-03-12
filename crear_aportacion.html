@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Afore Sura</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto&display=swap" rel="stylesheet">
+    <script src="js/payment.js"></script>
+  </head>
+  <body>
+ 
+
+
+  
+
+</head>
+<body>
+
+ 
+    
+<!--HEADER-->
+<div class="container-fluid header">
+      <div class="row">
+
+
+        <!--MENU MOBILE-->
+        <div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+
+          <div class="icono_menu collapsed " data-toggle="collapse" data-target="#menu1" >
+          </div>
+        </div>
+
+
+        <div id="menu1" class="collapse hidden-sm hidden-md hidden-lg menumobile" >
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuafore" >AFORE</div>
+             <div id="submenuafore" class="collapse hidden-sm hidden-md hidden-lg" >
+                <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforetransaccion" >Transacciones
+                </div>
+                  <div id="submenuaforetransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="modificar_aportacion.html" class="botonsubsubmenu">Mis aportaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="crear_aportacion.html" class="botonsubsubmenu">Crear aportación</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuaforeconsulta">Consultas</div>
+                  <div id="submenuaforeconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de saldo al día</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Notificación de aportaciones voluntarias</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Historial de aportaciones voluntarias</a></h5>
+                  </div>
+             </div>
+             <hr style="margin: 0 0 10px">
+             <div class="collapsed submenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversion" >INVERSIONES</div>
+             <div id="submenuinversion" class="collapse hidden-sm hidden-md hidden-lg" >
+                   <hr style="    margin: 0px">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversiontransaccion" >Transacciones
+                </div>
+                  <div id="submenuinversiontransaccion" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Domiciliaciones</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Depósito</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Retiro/Venta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Compra</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Traspaso</a></h5>
+                  </div>
+                <hr style="    margin: 0px 10px;">
+                <div class="collapsed subsubmenumobile iconomenumobile" data-toggle="collapse" data-target="#submenuinversionconsulta">Consultas</div>
+                  <div id="submenuinversionconsulta" class="finalmenumobile collapse hidden-sm hidden-md hidden-lg" >
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Estado de cuenta</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Constancia fiscal</a></h5>
+                    <hr style="    margin: 0px">
+                    <h5><a href="#" class="botonsubsubmenu">Movimientos</a></h5>
+                  </div>
+             </div>
+             <!--FIN MENU MOBILE-->
+        </div>
+      
+
+
+        <div class="col-xs-6 col-sm-6 logo ">
+          <a href="Index.html"><img src="images/logo-sura.png" width="130px" ></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-6 text-right menu_usuario">
+
+          <div class="usuario collapsed " data-toggle="collapse" data-target="#menu2" >
+            <i class="mdi mdi-account-outline"></i>
+              <font class="hidden-xs nombre-usuario" >Nombre Usuario</font>
+          </div>
+          </div>
+
+
+        <div id="menu2" class="collapse submenuusuario " >
+             <h5><a href="#" class="botonsubsubmenu">Mis Datos</a></h5>
+             <hr>
+             <h5><a href="#" class="botonsubsubmenucerrar">Cerrar Sesión</a></h5>
+        </div>
+
+        </div>
+      </div>
+
+      <!--MENU-->
+
+    <div class="row row_sin hidden-xs">
+      <nav class="navbar" >
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Index.html" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afore <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="modificar_aportacion.html" class="submenu">Mis aportaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="crear_aportacion.html" class="submenu">Crear aportación</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de saldo al día</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Notificación de aportaciones voluntarias</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Historial de aportaciones voluntarias</a></li>
+              </div>
+              </ul>
+            </li>
+            <li class="dropdown2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inversiones <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <div  class="contenedor_submenu">
+                <li class="titulo_submenu">TRANSACCIONES</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Domiciliaciones</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Depósito</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Retiro/Venta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Compra</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Traspaso</a></li>
+              </div>
+              <div class="contenedor_submenu">
+                <li class="titulo_submenu">CONSULTAS</li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Estado de cuenta</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Constancia fiscal</a></li>
+                <li><i class="mdi mdi-chevron-double-right icon_submenu"></i><a href="#" class="submenu">Movimientos</a></li>
+              </div>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+    </div>
+      <!--FIN MENU-->
+</div>
+<!--FIN HEADER-->
+
+
+
+<!--MIGAS-->
+<div class="container-fluid hidden-xs">
+    <div class="row contenedor_migas">
+      <a href="index.html"  class="migas">Inicio</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Afore</a>
+      /
+      <a href="modificar_aportacion.html"  class="migas">Mis aportaciones</a>
+      /
+      <a href="crear_aportacion.html"  class="migas active">Crear aportación</a>
+    </div>
+</div>
+<!--FIN MIGAS-->
+
+
+
+
+<!--MIS APORTACIONES-->
+
+<div class="container mas_info_cont margen_migas">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">¿Qué tipo de aportación desear realizar?</h4>
+    </div>
+
+    <hr >
+
+    <div class="row row_sin">
+        <div class="wizard">
+                <div class="tab-content tab_sinborde">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+ 
+                        <!--MODELO DE APORTACION-->
+                          <div class="tab-content tab_sinborde">
+                            <div class="row row-sin " > 
+                               <!--APORTACIONES UNICA-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_1.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-credit-card-outline icono_crearav"></i>ÚNICA</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de transferencia electrónica</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_unica.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES UNICAS-->
+                              <!--APORTACIONES DOMICILIADAS-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                      <img src="images/aportaciones_2.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-credit-card-multiple-outline icono_crearav"></i>DOMICILIADA</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Modalidad para ahorrar, solicitando cargos periódicos a tu tarjeta de débito.</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_domiciliada.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES DOMICILIADA-->
+                              <!--APORTACIONES NO RECCURENTES-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_3.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-laptop icono_crearav"></i>EN PORTAL BANCARIO</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de tu portal bancario</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_no_recurrente.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES NO RECURRENTES-->
+                              <!--APORTACIONES EFECTIVO-->
+                              <div class="col-md-3 col-sm-6 ">
+                                <div class=" tab_content2">
+                                     <img src="images/aportaciones_4.png" width="100%" class="hidden-xs">
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center ">
+                                        <h5 class="m-t"><strong><i class="mdi mdi-cash icono_crearav"></i>EN EFECTIVO</strong></h5>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <h6 class="m-t">Realiza tus aportaciones voluntarias por medio de transferencia electrónica</h6>
+                                      </div>
+                                     </div>
+                                     <div class="row">
+                                      <div class="col-xs-12 text-center">
+                                        <button type="button" class="btn btn-afore boton-responsivo editar" onclick="window.location='aportacion_en_efectivo.html'">SELECCIONAR</button>
+                                      </div>
+                                     </div>
+                                   </div>
+                              </div>
+                              <!--FIN APORTACIONES EFECTIVO-->
+                            </div>
+                          </div>
+                          <!--FIN MODELO DE APORTACION-->
+                         
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--FIN MIS APORTACIONES-->
+
+
+
+<!--CONOCE MAS-->
+
+<div class="container mas_info_cont ">
+  <div  class="mas_info_subcont">
+
+    <div class="row row_sin icon_help_contenedor">
+     <h4 class="subtitulo_secciones">Conoce las opciones que tenemos para que ahorres </h4>
+    </div>
+
+    <hr >
+
+    <div class="row row_sin">
+      <section>
+                <div class="tab-content tab_sinborde">
+                    <div class="tab-pane active" >
+
+                      <table width="100%">
+                        <tr class="cont-tr1" >
+                          <td class="cont-td1-azul">
+                            <strong>SIEFORE ADICIONALES</strong>
+                          </td>
+                          <td class="cont-td2-azul">
+                            <strong>SAV1</strong>
+                          </td>
+                          <td  class="cont-td2-azul">
+                            <strong>SAV2</strong>
+                          </td>
+                          <td class="cont-td2-azul">
+                            <strong>SAV3</strong>
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td class="cont-td1-blanco">
+                            Comisión anual
+                          </td>
+                          <td class="cont-td2-blanco">
+                            1.40%
+                          </td>
+                          <td class="cont-td2-blanco">
+                            1.30%
+                          </td>
+                          <td class="cont-td2-blanco">
+                            1.25%
+                          </td>
+                        </tr>
+                      </table>
+                      <br>
+                      <table width="100%">
+                        <tr class="cont-tr1" >
+                          <td class="cont-td1-azul">
+                            <strong>SIEFORE GENERACIONAL</strong>
+                          </td>
+                          <td  class="cont-td2-azul">
+                            <strong>AÑO DE NACIMIENTO</strong>
+                          </td>
+                          <td class="cont-td2-azul">
+                            <strong>COMISIÓN ANUAL*</strong>
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE Básica Inicial
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            de 1995 en adelante
+                          </td>
+                          <td class="cont-td2-blanco" rowspan="9">
+                            0.92%
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 90_94
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1990 y 1994
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td class="cont-td1-blanco">
+                            SIEFORE 85_89
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1985 y 1989
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 80-84
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1980 y 1984
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 75_79
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1975 y 1979
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 70-74
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1970 y 1974
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 65-69
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1965 y 1969
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 60-64
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1960 y 1964
+                          </td>
+                        </tr>
+                        <tr class="cont-tr2">
+                          <td  class="cont-td1-blanco">
+                            SIEFORE 55-59
+                          </td>
+                          <td  class="cont-td2-blanco">
+                            entre 1955 y 1959
+                          </td>
+                        </tr>
+                      </table>
+
+
+                        <div class="col-xs-12 text-center">
+                           <a type="button" class="btn btn-afore boton-responsivo " download="Aportaciones Voluntarias_MC_RGB_2.PDF" target="_blank" href="https://www.suramexico.com/servicios/pdf/infografia/AF005AportacionesVoluntarias_2019RGB.pdf"  >CONOCE MÁS SOBRE LAS AVS</a>
+                        </div>
+
+                        <div class="subtitulo_bloque_aportacion text_justify">
+                        *La comisión autorizada por la CONSAR es del 0.92% anual sobre el saldo administrado, aplicable a partir del 1° de enero hasta el 31 de diciembre del 2020. Dicha comisión se cobra al cliente y se ajusta por normativa cada año.
+                        <br>
+                          <div class="text-center">
+                            <a type="button"  data-toggle="modal" data-target="#modal-avisolegal"  class="links_footer"  > <strong>CLAUSULAS</strong></a>
+                          </div>
+                        </div>
+
+                       
+                         
+                    </div>
+                </div>
+    </section>
+    </div>
+
+
+  </div>
+</div>
+
+<!--FIN CONOCE MAS-->
+
+
+
+
+<!--POPUP-->
+
+<div role="dialog" tabindex="-1" class="modal fade" id="modal-avisolegal"
+style="max-width:600px;margin-right:auto;margin-left:auto;">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header"> <!-- CABECERA -->
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+       <h3 class="text-center modal-title">Clausulas</h3>
+       </div>
+       <div class="modal-body text-center"> <!-- CUERPO DEL MENSAJE -->
+           <p style="text-align: justify;">1. El Cliente manifiesta bajo protesta de decir verdad, que los datos proporcionados en la presente solicitud de autorización al Contrato de Domiciliación de Aportación Voluntaria son verídicos.</p>
+<p style="text-align: justify;">2. El Cliente Titular de la cuenta individual aperturada en Afore SURA S.A. de C.V. manifiesta bajo protesta de decir que de igual manera es Titular de la cuenta bancaria proporcionada para efectos de cargo de Aportaciones Voluntarias por domiciliación.</p>
+<p style="text-align: justify;">3. El cliente autoriza a Afore SURA S.A. de C.V. para que en su representación solicite el cargo a su cuenta bancaria por concepto de Aportaciones Voluntarias que serán depositadas en su Cuenta Individual.</p>
+<p style="text-align: justify;">4. El Cliente acepta que Afore SURA S.A. de C.V. queda libre de toda responsabilidad si el banco con el que tiene contratada la cuenta de cargo ejerciera acción alguna de cualquier especie en su contra.</p>
+<p style="text-align: justify;">5. La cuenta bancaria otorgada para certificación por un $1.00, será utilizada para realizar una domiciliación por el importe mencionado y este será abonado en su Cuenta Individual que mantiene con la Afore.</p>
+<p style="text-align: justify;">6. De igual manera, Afore SURA S.A. de C.V. tampoco será responsable si al momento de intentar el cargo de Aportaciones Voluntarias, la cuenta del cliente no tuviese fondos suficientes para cubrir el servicio de domiciliación por dicho concepto o si la cuenta bancaria indicada estuviese bloqueada, suspendida o cancelada por cualquier motivo.</p>
+<p style="text-align: justify;">7. En caso de que la cuenta antes mencionada se encuentre bloqueada, suspendida o cancelada, Afore SURA S.A. de C.V. podrá notificarlo vía correo electrónico o por medio de su Call Center y tendrá absoluta libertad de cancelar este servicio sin responsabilidad alguna.</p>
+<p style="text-align: justify;">8. Afore SURA S.A. de C.V. realizará el cargo correspondiente solamente una vez en las fechas pactadas con el cliente en la solicitud requisitada y firmada, en el horario que Afore SURA S.A. de C.V. determine.</p>
+<p style="text-align: justify;">9. En caso de fondos insuficientes en la cuenta indicada para realizar el cargo, Afore SURA S.A. de C.V. podrá notificarlo al cliente vía correo electrónico o por medio de su Call Center.</p>
+<p style="text-align: justify;">10. Si al momento de realizar el cargo en la cuenta bancaria, éste es rechazado, se suspenderá el servicio de Domiciliación de Aportación Voluntaria.</p>
+<p style="text-align: justify;">11. Si en 4 ocasiones consecutivas la cuenta presenta fondos insuficientes, Afore SURA S.A. de C.V. tendrá absoluta libertad de cancelar este servicio sin responsabilidad alguna.</p>
+<p style="text-align: justify;">12. El cargo en cada intento se realizará solamente por el monto indicado por el cliente en la solicitud de domiciliación, no se realizarán cargos acumulados de Aportaciones Voluntarias.</p>
+<p style="text-align: justify;">13. El servicio de Domiciliación se cancelará de forma automática cuando la Cuenta Individual del cliente a la que se realizan las Aportaciones Voluntarias ya se haya traspasado, este marcada como cuenta en proceso de litigio, traspaso Afore-Afore, unificación o separación de cuentas.</p>
+<p style="text-align: justify;">14. El alta de servicios deberá efectuarse al menos con 5 días hábiles bancarios de anticipación a la fecha en que el banco efectúe el primer cargo a la cuenta del cliente, los cargos se efectuarán por el importe y periodicidad determinados en la presente solicitud.</p>
+<p style="text-align: justify;">15. El cliente contará con 90 días hábiles bancarios, para realizar aclaraciones de este servicio.</p>
+<p style="text-align: justify;">16. El cargo se realizará de acuerdo a la periodicidad solicitada por el trabajador y este no exceda a un monto mayor a $50,000.00, en caso de ser día inhábil, se realizará al día hábil inmediato siguiente.</p>
+<p style="text-align: justify;">17. El cliente podrá realizar modificaciones y/o cancelación del servicio de Domiciliación de Aportaciones Voluntarias únicamente ante Afore SURA S.A. de C.V., en cualquier momento, este se aplicará 5 días hábiles posteriores a la recepción de la solicitud, sin costo ni penalización alguna. Los depósitos en tránsito no podrán ser suspendidos, el cliente podrá solicitar el reembolso ante Afore SURA S.A. de C.V., mediante el trámite de retiro correspondiente.</p>
+<p style="text-align: justify;">18. El cliente acepta que Afore SURA S.A. de C.V. podrá realizar el cargo correspondiente a la subcuenta de Aportaciones Voluntarias por el importe que resulte de la solicitud de devolución de cargos no reconocidos, que el cliente obtuvo de la Institución de Crédito.</p>
+<p style="text-align: justify;">19. El cliente acepta y conoce las políticas aplicables al servicio de Domiciliación de Aportación Voluntaria las cuales se entregan en este acto y que se encuentran descritas en el presente.</p>
+<p style="text-align: justify;">20. De conformidad con el Artículo 142 Fracción XVIII de la Ley del Impuesto sobre la Renta, el cliente acepta que al momento de realizar el retiro de Aportaciones Voluntarias, se sujetará a la retención en los términos que establece dicho artículo.</p>
+<p style="text-align: justify;">21. El cliente manifiesta bajo protesta de decir verdad que el dinero integrado y aportado en su subcuenta de Aportaciones Voluntarias es de su propiedad, de procedencia lícita y no realizará depósitos en nombre de terceros, liberando de cualquier responsabilidad a la Administradora y sus funcionarios.</p>
+<p style="text-align: justify;">
+Para mayor información consulta https://afore.suramexico.com/afore o llama al teléfono 4433 10 81 92 en un horario de atención de 8:30 a 17:30 hrs
+Puedes consultar nuestro aviso de privacidad en la página de internet https://afore.suramexico.com/afore
+OP-009-V5 ? Enero 2016
+</p>
+
+
+       </div>
+       <div class="modal-footer">
+        <ul class="list-inline pull-right">
+           <li> <!-- PIE -->
+              <button  class="btn btn-default m-r2" type="button" data-dismiss="modal">CERRAR</button>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+</div>
+
+<!--FIN POPUP-->
+
+
+
+<!--FOOTER-->
+
+<div class="container-fluid bloque_footer" >
+  <div class="row row_sin" >
+    <div class="col-sm-2 hidden-xs"></div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-comment-outline icono_footer" ></i> Quejas y sujerencias</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-email-outline icono_footer" ></i> Escríbenos</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-phone-outline icono_footer" ></i> 0144 3310 8192</h5></a>
+    </div>
+    <div class="col-sm-2 text-center contacto_footer">
+      <a href=""><h5><i class="mdi mdi-map-marker-outline icono_footer" ></i> Modulos</h5></a>
+    </div>
+    <div class="col-sm-2 hidden-xs"></div>
+  </div>
+
+  <hr>
+
+  <div class="col-lg-12 text-center">
+    <div  class="copy_footer">Última conexión: 10 May 2018, 13hrs ip:192.12.43.11</div>
+    <div  class="copy_footer">Copyright SURA© 2018. Todos los derechos reservados.</div>
+    <div>
+      <a href="#" class="links_footer">Avisos de privacidad SURA México</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Afore</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Inversiones</a>
+      |
+      <a href="#" class="links_footer">Avisos de privacidad Pensiones</a>
+      |
+      <a href="#" class="links_footer">FATCA y CRS</a>
+      |
+      <a href="#" class="links_footer">Documentos Servicios de Inversión</a>
+      |
+      <a href="#" class="links_footer">Seguridad Informática</a>
+      |
+      <a href="#" class="links_footer">Línea ética</a>
+      |
+      <a href="#" class="links_footer">Buzón de quejas</a>
+    </div>
+  </div>
+</div>
+
+<!--FIN FOOTER-->
+
+
+
+
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+        $(function () {
+        	$('[data-toggle="tooltip"]').tooltip()
+        })
+      </script>
+      <script type="text/javascript">
+        $('.dropdown-toggle').click(function(e) {
+          if ($(document).width() > 767) {
+            e.preventDefault();
+
+            var url = $(this).attr('href');
+
+               
+            if (url !== '#') {
+            
+              window.location.href = url;
+            }
+
+          }
+        });
+      </script>
+      <script type="text/javascript">
+
+              $("input[data-type='currency']").on({
+                  keyup: function() {
+                    formatCurrency($(this));
+                  },
+                  blur: function() { 
+                    formatCurrency($(this), "blur");
+                  }
+              });
+
+
+              function formatNumber(n) {
+                // format number 1000000 to 1,234,567
+                return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              }
+
+
+              function formatCurrency(input, blur) {
+                // appends $ to value, validates decimal side
+                // and puts cursor back in right position.
+                
+                // get input value
+                var input_val = input.val();
+                
+                // don't validate empty input
+                if (input_val === "") { return; }
+                
+                // original length
+                var original_len = input_val.length;
+
+                // initial caret position 
+                var caret_pos = input.prop("selectionStart");
+                  
+                // check for decimal
+                if (input_val.indexOf(".") >= 0) {
+
+                  // get position of first decimal
+                  // this prevents multiple decimals from
+                  // being entered
+                  var decimal_pos = input_val.indexOf(".");
+
+                  // split number by decimal point
+                  var left_side = input_val.substring(0, decimal_pos);
+                  var right_side = input_val.substring(decimal_pos);
+
+                  // add commas to left side of number
+                  left_side = formatNumber(left_side);
+
+                  // validate right side
+                  right_side = formatNumber(right_side);
+                  
+                  // On blur make sure 2 numbers after decimal
+                  if (blur === "blur") {
+                    right_side += "00";
+                  }
+                  
+                  // Limit decimal to only 2 digits
+                  right_side = right_side.substring(0, 2);
+
+                  // join number by .
+                  input_val = "$" + left_side + "." + right_side;
+
+                } else {
+                  // no decimal entered
+                  // add commas to number
+                  // remove all non-digits
+                  input_val = formatNumber(input_val);
+                  input_val = "$" + input_val;
+                  
+                  // final formatting
+                  if (blur === "blur") {
+                    input_val += ".00";
+                  }
+                }
+                
+                // send updated string to input
+                input.val(input_val);
+
+                // put caret back in the right position
+                var updated_len = input_val.length;
+                caret_pos = updated_len - original_len + caret_pos;
+                input[0].setSelectionRange(caret_pos, caret_pos);
+              }
+      </script>
+      
+
+
+<script>
+function checar(){
+    if (boton.disabled == true){
+        boton.disabled = false;
+    }else{
+        boton.disabled = true;
+    }
+}
+function s1(){
+    if (sig1.disabled == true){
+        sig1.disabled = false;
+    }else{
+        sig1.disabled = false;
+    }
+}
+function s2(){
+    if (sig2.disabled == true){
+        sig2.disabled = false;
+    }else{
+        sig2.disabled = false;
+    }
+}
+function s3(){
+    if (sig3.disabled == true){
+        sig3.disabled = false;
+    }else{
+        sig3.disabled = false;
+    }
+}
+function s4(){
+    if (sig4.disabled == true){
+        sig4.disabled = false;
+    }else{
+        sig4.disabled = false;
+    }
+}
+
+function p1(){
+    if (pregun1.disabled == true){
+        pregun1.disabled = false;
+    }else{
+        pregun1.disabled = false;
+    }
+}
+function p2(){
+    if (pregun2.disabled == true){
+        pregun2.disabled = false;
+    }else{
+        pregun2.disabled = false;
+    }
+}
+function p3(){
+    if (pregun3.disabled == true){
+        pregun3.disabled = false;
+    }else{
+        pregun3.disabled = false;
+    }
+}
+function sp1(){
+    if (spregun1.disabled == true){
+        spregun1.disabled = false;
+    }else{
+        spregun1.disabled = false;
+    }
+}
+function sp2(){
+    if (spregun2.disabled == true){
+        spregun2.disabled = false;
+    }else{
+        spregun2.disabled = false;
+    }
+}
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Initialize tooltips
+    
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+</script>
+
+<script type="text/javascript">
+                                function pagoOnChange(sel) {
+      if (sel.value=="CLABE"){
+           divC = document.getElementById("nCuenta");
+           divC.style.display = "";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "none";
+
+      }else{
+
+           divC = document.getElementById("nCuenta");
+           divC.style.display="none";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "";
+      }
+}
+                              </script>
+
+
+  <script>
+    var J = Payment.J,
+      numeric = document.querySelector('[data-numeric]'),
+      number = document.querySelector('.cc-number'),
+      exp = document.querySelector('.cc-exp'),
+      cvc = document.querySelector('.cc-cvc'),
+      validation = document.querySelector('.validation');
+
+    Payment.restrictNumeric(numeric);
+    Payment.formatCardNumber(number, 16);
+    Payment.formatCardExpiry(exp);
+    Payment.formatCardCVC(cvc);
+
+    document.querySelector('form').onsubmit = function(e) {
+      e.preventDefault();
+      J.toggleClass(document.querySelectorAll('input'), 'invalid');
+      J.removeClass(validation, 'passed failed');
+
+      var cardType = Payment.fns.cardType(J.val(number));
+
+      J.toggleClass(number, 'invalid', !Payment.fns.validateCardNumber(J.val(number)));
+      J.toggleClass(exp, 'invalid', !Payment.fns.validateCardExpiry(Payment.cardExpiryVal(exp)));
+
+      J.toggleClass(cvc, 'invalid', !Payment.fns.validateCardCVC(J.val(cvc), cardType));
+
+      if (document.querySelectorAll('.invalid').length) {
+        J.addClass(validation, 'failed');
+      } else {
+        J.addClass(validation, 'passed');
+      }
+    }
+  </script>
+<script type="text/javascript">function validaNumericos(event) {
+    if(event.charCode >= 48 && event.charCode <= 57){
+      return true;
+     }
+     return false;        
+}</script>
+
+  </body>
+</html>
